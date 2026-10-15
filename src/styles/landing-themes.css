@@ -1,0 +1,131 @@
+
+/* src/styles/landing-themes.css */
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="night"],
+html[data-theme="midnight"] {
+  color-scheme: dark;
+}
+
+/* Smooth theme transitions */
+[data-theme] .landing-page {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* NIGHT */
+[data-theme="night"] .landing-page {
+  background-color: #020617;
+  color: #f1f5f9;
+}
+
+[data-theme="night"] .landing-page .bg-white,
+[data-theme="night"] .landing-page .bg-gray-50,
+[data-theme="night"] .landing-page .bg-gray-100 {
+  background-color: #0f172a !important;
+}
+
+[data-theme="night"] .landing-page .text-gray-900,
+[data-theme="night"] .landing-page .text-gray-800,
+[data-theme="night"] .landing-page .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="night"] .landing-page .text-gray-700,
+[data-theme="night"] .landing-page .text-gray-600,
+[data-theme="night"] .landing-page .text-gray-500 {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="night"] .landing-page .border-gray-100,
+[data-theme="night"] .landing-page .border-gray-200,
+[data-theme="night"] .landing-page .border-gray-300,
+[data-theme="night"] .landing-page .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+[data-theme="night"] .landing-page input,
+[data-theme="night"] .landing-page textarea,
+[data-theme="night"] .landing-page select {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+[data-theme="night"] .landing-page input::placeholder,
+[data-theme="night"] .landing-page textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* MIDNIGHT */
+[data-theme="midnight"] .landing-page {
+  background-color: #101b30;
+  color: #e2e8f0;
+}
+
+[data-theme="midnight"] .landing-page .bg-white,
+[data-theme="midnight"] .landing-page .bg-gray-50,
+[data-theme="midnight"] .landing-page .bg-gray-100 {
+  background-color: #182640 !important;
+}
+
+[data-theme="midnight"] .landing-page .text-gray-900,
+[data-theme="midnight"] .landing-page .text-gray-800,
+[data-theme="midnight"] .landing-page .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="midnight"] .landing-page .text-gray-700,
+[data-theme="midnight"] .landing-page .text-gray-600,
+[data-theme="midnight"] .landing-page .text-gray-500 {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="midnight"] .landing-page .border-gray-100,
+[data-theme="midnight"] .landing-page .border-gray-200,
+[data-theme="midnight"] .landing-page .border-gray-300,
+[data-theme="midnight"] .landing-page .border-slate-200 {
+  border-color: #293955 !important;
+}
+
+[data-theme="midnight"] .landing-page input,
+[data-theme="midnight"] .landing-page textarea,
+[data-theme="midnight"] .landing-page select {
+  background-color: #101b30;
+  color: #f1f5f9;
+  border-color: #293955;
+}
+
+[data-theme="midnight"] .landing-page input::placeholder,
+[data-theme="midnight"] .landing-page textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Interactive controls */
+[data-theme="night"] .landing-page .hover\:bg-gray-50:hover,
+[data-theme="night"] .landing-page .hover\:bg-gray-100:hover {
+  background-color: #1e293b !important;
+}
+
+[data-theme="midnight"] .landing-page .hover\:bg-gray-50:hover,
+[data-theme="midnight"] .landing-page .hover\:bg-gray-100:hover {
+  background-color: #293955 !important;
+}
+
+/* Preserve the footer's existing dark identity */
+[data-theme="night"] .landing-page .bg-slate-950,
+[data-theme="midnight"] .landing-page .bg-slate-950 {
+  background-color: #020617 !important;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  [data-theme] .landing-page,
+  [data-theme] .landing-page * {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
