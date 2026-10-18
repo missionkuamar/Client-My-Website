@@ -173,7 +173,7 @@ export const fetchMyUploads = createAsyncThunk(
       }).toString();
 
       const { data } = await api.get(`/projects/my-uploads?${query}`);
-      console.log("Fetched my uploads:", data.projects); // Debugging log
+      // console.log("Fetched my uploads:", data.projects); // Debugging log
       return data;
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || "Failed");

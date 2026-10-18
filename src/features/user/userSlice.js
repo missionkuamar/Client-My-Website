@@ -28,7 +28,7 @@ export const fetchAllUsers = createAsyncThunk(
       }).toString();
 
       const { data } = await api.get(`/users?${query}`);
-      console.log("Fetched users:", data); // Debugging log
+      // console.log("Fetched users:", data); // Debugging log
       return data;
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || "Failed");

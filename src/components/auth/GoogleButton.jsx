@@ -29,8 +29,8 @@ const GoogleButton = ({ text = "continue_with", width = 380 }) => {
       return;
     }
 
-    console.log("✅ [GoogleButton] Initializing with Client ID:", clientId);
-    console.log("✅ [GoogleButton] Origin:", window.location.origin);
+    // console.log("✅ [GoogleButton] Initializing with Client ID:", clientId);
+    // console.log("✅ [GoogleButton] Origin:", window.location.origin);
 
     try {
       window.google.accounts.id.initialize({
@@ -50,7 +50,7 @@ const GoogleButton = ({ text = "continue_with", width = 380 }) => {
       });
 
       initializedRef.current = true;
-      console.log("✅ [GoogleButton] Render complete");
+      // console.log("✅ [GoogleButton] Render complete");
     } catch (err) {
       console.error("❌ [GoogleButton] Initialization error:", err);
       toast.error("Google Sign-In failed to load");
@@ -59,15 +59,15 @@ const GoogleButton = ({ text = "continue_with", width = 380 }) => {
   }, []);
 
   const handleCredentialResponse = async (response) => {
-    console.log("✅ [GoogleButton] Credential received");
-    console.log("   → JWT length:", response.credential?.length);
+    // console.log("✅ [GoogleButton] Credential received");
+    // console.log("   → JWT length:", response.credential?.length);
 
     const toastId = toast.loading("Signing you in...");
 
     try {
       const result = await dispatch(googleLogin(response.credential)).unwrap();
 
-      console.log("✅ [GoogleButton] Login success:", result.user);
+      // console.log("✅ [GoogleButton] Login success:", result.user);
 
       toast.success(
         result.isNewUser
