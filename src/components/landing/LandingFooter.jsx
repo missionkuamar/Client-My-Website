@@ -19,8 +19,8 @@ const socialLinks = [
   { name: "X", icon: FaXTwitter, href: "https://x.com/KumarMissi80901" },
   { name: "GitHub", icon: FaGithub, href: "https://github.com/missionkuamar" },
   { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/in/mission-kumar-03b0742b4/" },
-  { name: "YouTube", icon: FaYoutube, href: "UCQ_j-TEk8xVSqAjVtfijnag" },
-  { name: "Instagram", icon: FaInstagram, href: "https://www.youtube.com/@DramaDaily-s1p" },
+  { name: "YouTube", icon: FaYoutube, href: "https://www.youtube.com/@DramaDaily-s1p" },
+  { name: "Instagram", icon: FaInstagram, href: "https://www.instagram.com/codewithmission_official/" },
   { name: "Facebook", icon: FaFacebookF, href: "https://www.facebook.com/profile.php?id=61567650055362" },
   { name: "Discord", icon: FaDiscord, href: "https://discord.com/channels/1488063436850991117/1488063437954088982" },
  
