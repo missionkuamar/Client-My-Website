@@ -12,20 +12,18 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
-import { FaTelegram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+
 
 
 const socialLinks = [
-  { name: "X", icon: FaXTwitter, href: "#" },
-  { name: "GitHub", icon: FaGithub, href: "#" },
-  { name: "LinkedIn", icon: FaLinkedin, href: "#" },
-  { name: "YouTube", icon: FaYoutube, href: "#" },
-  { name: "Instagram", icon: FaInstagram, href: "#" },
-  { name: "Facebook", icon: FaFacebookF, href: "#" },
-  { name: "Discord", icon: FaDiscord, href: "#" },
-  { name: "Telegram", icon: FaTelegram, href: "#" },
-  { name: "WhatsApp", icon: FaWhatsapp, href: "#" },
+  { name: "X", icon: FaXTwitter, href: "https://x.com/KumarMissi80901" },
+  { name: "GitHub", icon: FaGithub, href: "https://github.com/missionkuamar" },
+  { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/in/mission-kumar-03b0742b4/" },
+  { name: "YouTube", icon: FaYoutube, href: "UCQ_j-TEk8xVSqAjVtfijnag" },
+  { name: "Instagram", icon: FaInstagram, href: "https://www.youtube.com/@DramaDaily-s1p" },
+  { name: "Facebook", icon: FaFacebookF, href: "https://www.facebook.com/profile.php?id=61567650055362" },
+  { name: "Discord", icon: FaDiscord, href: "https://discord.com/channels/1488063436850991117/1488063437954088982" },
+ 
 ];
 
 const productLinks = [
