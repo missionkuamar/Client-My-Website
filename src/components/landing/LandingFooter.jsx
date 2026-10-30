@@ -9,12 +9,23 @@ import {
 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa6";
+import { FaTelegram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const socialLinks = [
   { name: "X", icon: FaXTwitter, href: "#" },
   { name: "GitHub", icon: FaGithub, href: "#" },
   { name: "LinkedIn", icon: FaLinkedin, href: "#" },
   { name: "YouTube", icon: FaYoutube, href: "#" },
+  { name: "Instagram", icon: FaInstagram, href: "#" },
+  { name: "Facebook", icon: FaFacebookF, href: "#" },
+  { name: "Discord", icon: FaDiscord, href: "#" },
+  { name: "Telegram", icon: FaTelegram, href: "#" },
+  { name: "WhatsApp", icon: FaWhatsapp, href: "#" },
 ];
 
 const productLinks = [
